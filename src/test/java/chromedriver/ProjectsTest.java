@@ -1,5 +1,6 @@
 package chromedriver;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -25,10 +26,12 @@ public class ProjectsTest {
     public void shouldAddNewProject() {
         kokpitPage.goToAdminPanel();
         projectsPage.clickAddProjectButton();
-        projectsPage.setProjectName("Project158");
-        projectsPage.setPojectPrefix("58");
+        projectsPage.setProjectName("Project160");
+        projectsPage.setProjectPrefix("60");
         projectsPage.setProjectDescription("This is the best project ever");
         projectsPage.clickSaveProjectButton();
+
+        Assert.assertTrue(projectsPage.findNotificationAddedNewProject());
     }
 
     @AfterMethod
