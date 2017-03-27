@@ -1,6 +1,5 @@
 package chromedriver;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,47 +8,39 @@ public class ProjectsPage {
 
     WebDriver driver;
 
-    @FindBy(css="a[href='http://demo.testarena.pl/administration/add_project']")
-    private WebElement addProjectButton;
+    @FindBy(id="search")
+    private WebElement searchField;
 
-    @FindBy(id="name")
-    private WebElement nameOfProjectField;
+    @FindBy(css="a[href='http://demo.testarena.pl/administration/projects']")
+    private WebElement leftProjectsSectionButton;
 
-    @FindBy(id="prefix")
-    private WebElement prefixOfProjectField;
+    @FindBy(id="j_searchButton")
+    private WebElement searchButton;
 
-    @FindBy(id="description")
-    private WebElement descriptionOfProjectField;
+    @FindBy(id="action_icon")
+    private WebElement actionButton;
 
-    @FindBy(id="save")
-    private WebElement saveProjectButton;
-
-    @FindBy(id="j_info_box")
-//    @FindBy(xpath = "//*[@id=\"j_info_box\"]")
-    private WebElement notificationBox;
-
-    public void clickAddProjectButton() {
-        addProjectButton.click();
+    public ProjectsPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    public void setProjectName(String name) {
-        nameOfProjectField.sendKeys(name);
+    public void goToProjectsSection() {
+        leftProjectsSectionButton.click();
     }
 
-    public void setProjectPrefix(String prefix) {
-        prefixOfProjectField.sendKeys(prefix);
+    public void setSearchingProject(String name) {
+        searchField.sendKeys(name);
     }
 
-    public void setProjectDescription(String description) {
-        descriptionOfProjectField.sendKeys(description);
+    public void searchProject() {
+        searchButton.click();
     }
 
-    public void clickSaveProjectButton() {
-        saveProjectButton.click();
+    public boolean tellIfProjectIsFounded() {
+        return actionButton.isDisplayed();
     }
 
-    public boolean findNotificationAddedNewProject() {
-        return notificationBox.isDisplayed();
-    }
+
+
 
 }

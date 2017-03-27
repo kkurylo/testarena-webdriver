@@ -8,37 +8,34 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ProjectsTest {
+public class AdminPanelTest {
 
     WebDriver driver = new ChromeDriver();
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     KokpitPage kokpitPage = PageFactory.initElements(driver, KokpitPage.class);
     AdminPanelPage adminPanelPage = PageFactory.initElements(driver, AdminPanelPage.class);
-    ProjectsPage projectsPage = PageFactory.initElements(driver, ProjectsPage.class);
 
     @BeforeMethod
-    public void getUp() {
+    public void setUp() {
         loginPage.openPage();
         loginPage.logInAsAdmin("administrator@testarena.pl", "sumXQQ72$L");
-        kokpitPage.goToAdminPanel();
-        adminPanelPage.clickAddProjectButton();
-        adminPanelPage.setProjectName("niechpowstanie");
-        adminPanelPage.setProjectPrefix("26");
-        adminPanelPage.setProjectDescription("niema");
-        adminPanelPage.clickSaveProjectButton();
+
     }
 
     @Test
-    public void shouldFindMyProject() {
-        projectsPage.goToProjectsSection();
-        projectsPage.setSearchingProject("niechpowstanie");
-        projectsPage.searchProject();
+    public void shouldAddNewProject() {
+        kokpitPage.goToAdminPanel();
+        adminPanelPage.clickAddProjectButton();
+        adminPanelPage.setProjectName("Project122");
+        adminPanelPage.setProjectPrefix("22");
+        adminPanelPage.setProjectDescription("This is the best project ever");
+        adminPanelPage.clickSaveProjectButton();
 
-        Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
+        Assert.assertTrue(adminPanelPage.findNotificationAddedNewProject());
     }
 
     @AfterMethod
-    public void chillOut() {
+    public void tearDown() {
         driver.quit();
     }
 }
