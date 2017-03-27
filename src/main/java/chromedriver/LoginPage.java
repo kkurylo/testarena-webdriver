@@ -1,0 +1,33 @@
+package chromedriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+
+    WebDriver driver;
+
+    @FindBy(id="email")
+    private WebElement emailField;
+
+    @FindBy(id="password")
+    private WebElement passwordField;
+
+    @FindBy(id="login")
+    private WebElement loginButton;
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void openPage() {
+        driver.get("http://demo.testarena.pl/zaloguj");
+    }
+
+    public void logInAsAdmin(String email, String password) {
+        emailField.sendKeys(email);
+        passwordField.sendKeys(password);
+        loginButton.click();
+    }
+}
