@@ -9,13 +9,13 @@ public class KokpitPage {
     WebDriver driver;
 
     @FindBy(css="a[href='http://demo.testarena.pl/administration']")
-    private WebElement rightAdministrationButton;
+    private WebElement rightAdminPanelButton;
 
     public KokpitPage(WebDriver driver) {
         this.driver = driver;
     }
 
     public void goToAdminPanel() {
-        rightAdministrationButton.click();
+        rightAdminPanelButton.click();
     }
 }

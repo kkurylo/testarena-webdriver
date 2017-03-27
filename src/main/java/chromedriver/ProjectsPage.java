@@ -8,7 +8,7 @@ public class ProjectsPage {
 
     WebDriver driver;
 
-    @FindBy(css="a[href='http://demo.testarena.pl/administration/add_project'")
+    @FindBy(css="a[href='http://demo.testarena.pl/administration/add_project']")
     private WebElement addProjectButton;
 
     @FindBy(id="name")
@@ -39,7 +39,7 @@ public class ProjectsPage {
         descriptionOfProjectField.sendKeys(description);
     }
 
-    public void saveNewProject() {
+    public void clickSaveProjectButton() {
         saveProjectButton.click();
     }
 }
