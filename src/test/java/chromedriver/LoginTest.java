@@ -12,7 +12,6 @@ public class LoginTest extends MainTest {
 
     @Test
     public void shouldLoginSuccessfully() {
-        loginPage.logInAsAdmin("administrator@testarena.pl", "sumXQQ72$L");
+        loginPage.logInAsAdmin(properties.getProperty("adminEmail"), properties.getProperty("adminPassword"));
     }
-
 }

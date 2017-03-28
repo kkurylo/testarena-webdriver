@@ -6,20 +6,22 @@ import org.testng.annotations.Test;
 
 public class ProjectsTest extends MainTest {
 
-    KokpitPage kokpitPage = new KokpitPage(driver);
-    AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
-    ProjectsPage projectsPage = new ProjectsPage(driver);
+    private KokpitPage kokpitPage = new KokpitPage(driver);
+    private AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
+    private ProjectsPage projectsPage = new ProjectsPage(driver);
 
     @BeforeMethod
     public void setUp() {
         loginPage.openPage();
-        loginPage.logInAsAdmin("administrator@testarena.pl", "sumXQQ72$L");
+        loginPage.logInAsAdmin(properties.getProperty("adminEmail"), properties.getProperty("adminPassword"));
         kokpitPage.goToAdminPanel();
         adminPanelPage
                 .clickAddProjectButton()
-                .setProjectName("mojnowyprojekt0")
-                .setProjectPrefix("22a0")
-                .setProjectDescription("niema")
+                .setProjectName(properties.getProperty("projectName2"))
+                .setProjectPrefix(properties.getProperty("projectPrefix2"))
+                .setColorForOpenStatus(properties.getProperty("colorForOpenStatus2"))
+                .setColorForInProgressStatus(properties.getProperty("colorForInProgressStatus2"))
+                .setProjectDescription(properties.getProperty("projectDescription2"))
                 .clickSaveProjectButton();
     }
 
@@ -27,10 +29,9 @@ public class ProjectsTest extends MainTest {
     public void shouldFindMyProject() {
         projectsPage
                 .goToProjectsSection()
-                .setSearchingProject("mojnowyprojekt0")
+                .setSearchingProject(properties.getProperty("projectName2"))
                 .searchProject();
 
         Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
     }
-
 }

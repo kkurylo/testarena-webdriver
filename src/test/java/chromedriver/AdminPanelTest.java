@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 
 public class AdminPanelTest extends MainTest {
 
-    KokpitPage kokpitPage = new KokpitPage(driver);
-    AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
+    private KokpitPage kokpitPage = new KokpitPage(driver);
+    private AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
 
     @BeforeMethod
     public void setUp() {
         loginPage.openPage();
-        loginPage.logInAsAdmin("administrator@testarena.pl", "sumXQQ72$L");
+        loginPage.logInAsAdmin(properties.getProperty("adminEmail"), properties.getProperty("adminPassword"));
 
     }
 
@@ -21,14 +21,13 @@ public class AdminPanelTest extends MainTest {
         kokpitPage.goToAdminPanel();
         adminPanelPage
                 .clickAddProjectButton()
-                .setProjectName("Proj19")
-                .setProjectPrefix("qvi19")
-                .setColorForOpenStatus("#f4cccc")
-                .setColorForInProgressStatus("#b6d7a8")
-                .setProjectDescription("T")
+                .setProjectName(properties.getProperty("projectName1"))
+                .setProjectPrefix(properties.getProperty("projectPrefix1"))
+                .setColorForOpenStatus(properties.getProperty("colorForOpenStatus1"))
+                .setColorForInProgressStatus(properties.getProperty("colorForInProgressStatus1"))
+                .setProjectDescription(properties.getProperty("projectDescription1"))
                 .clickSaveProjectButton();
 
         Assert.assertTrue(adminPanelPage.findNotificationAddedNewProject());
     }
-
 }
