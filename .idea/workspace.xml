@@ -4,11 +4,8 @@
     <list default="true" id="392afe12-1f15-4369-b26c-a0bff42dfb41" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" afterPath="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java" afterPath="$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" afterPath="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -29,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectsPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="534">
+              <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,68 +38,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectsTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProjectsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="614">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KokpitPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminPanelPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminPanelTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -142,10 +85,10 @@
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/PropertiesLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java" />
       </list>
     </option>
@@ -681,7 +624,8 @@
     <MESSAGE value="ulepszony test sprawdzania czy projekt został dodany - ok" />
     <MESSAGE value="Wyszukiwanie utworzonego projektu działa" />
     <MESSAGE value="Dodanie gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie gitignore" />
+    <MESSAGE value="PageFactory w konstruktorach" />
+    <option name="LAST_COMMIT_MESSAGE" value="PageFactory w konstruktorach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -705,7 +649,7 @@
         <state relative-caret-position="96">
           <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -714,7 +658,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,34 +731,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="112">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="128">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -821,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="112">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -831,8 +763,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="550">
+          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -841,8 +783,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="534">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

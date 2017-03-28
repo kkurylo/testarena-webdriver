@@ -20,18 +20,20 @@ public class ProjectsTest {
         loginPage.openPage();
         loginPage.logInAsAdmin("administrator@testarena.pl", "sumXQQ72$L");
         kokpitPage.goToAdminPanel();
-        adminPanelPage.clickAddProjectButton();
-        adminPanelPage.setProjectName("mojnowyprojekt0");
-        adminPanelPage.setProjectPrefix("22a0");
-        adminPanelPage.setProjectDescription("niema");
-        adminPanelPage.clickSaveProjectButton();
+        adminPanelPage
+                .clickAddProjectButton()
+                .setProjectName("mojnowyprojekt0")
+                .setProjectPrefix("22a0")
+                .setProjectDescription("niema")
+                .clickSaveProjectButton();
     }
 
     @Test
     public void shouldFindMyProject() {
-        projectsPage.goToProjectsSection();
-        projectsPage.setSearchingProject("mojnowyprojekt0");
-        projectsPage.searchProject();
+        projectsPage
+                .goToProjectsSection()
+                .setSearchingProject("mojnowyprojekt0")
+                .searchProject();
 
         Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
     }

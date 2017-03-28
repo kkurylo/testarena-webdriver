@@ -24,12 +24,13 @@ public class AdminPanelTest {
     @Test
     public void shouldAddNewProject() {
         kokpitPage.goToAdminPanel();
-        adminPanelPage.clickAddProjectButton();
-        adminPanelPage.setProjectName("Proj0");
-        adminPanelPage.setProjectPrefix("qv0");
+        adminPanelPage
+                .clickAddProjectButton()
+                .setProjectName("Proj0")
+                .setProjectPrefix("qv0")
 //        adminPanelPage.setColorOfOpenStatusProject();
-        adminPanelPage.setProjectDescription("T");
-        adminPanelPage.clickSaveProjectButton();
+                .setProjectDescription("T")
+                .clickSaveProjectButton();
 
         Assert.assertTrue(adminPanelPage.findNotificationAddedNewProject());
     }

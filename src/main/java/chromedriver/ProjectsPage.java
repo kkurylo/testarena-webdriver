@@ -26,12 +26,14 @@ public class ProjectsPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void goToProjectsSection() {
+    public ProjectsPage goToProjectsSection() {
         leftProjectsSectionButton.click();
+        return new ProjectsPage(driver);
     }
 
-    public void setSearchingProject(String name) {
+    public ProjectsPage setSearchingProject(String name) {
         searchField.sendKeys(name);
+        return new ProjectsPage(driver);
     }
 
     public void searchProject() {

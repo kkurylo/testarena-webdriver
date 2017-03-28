@@ -38,24 +38,28 @@ public class AdminPanelPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void clickAddProjectButton() {
+    public AdminPanelPage clickAddProjectButton() {
         addProjectButton.click();
+        return new AdminPanelPage(driver);
     }
 
-    public void setProjectName(String name) {
+    public AdminPanelPage setProjectName(String name) {
         nameOfProjectField.sendKeys(name);
+        return new AdminPanelPage(driver);
     }
 
-    public void setProjectPrefix(String prefix) {
+    public AdminPanelPage setProjectPrefix(String prefix) {
         prefixOfProjectField.sendKeys(prefix);
+        return new AdminPanelPage(driver);
     }
 
 //    public void setColorOfOpenStatusProject() {
 //        js.executeScript("driver.getElementById('openStatusColor').value='#ffffff'");
 //    }
 
-    public void setProjectDescription(String description) {
+    public AdminPanelPage setProjectDescription(String description) {
         descriptionOfProjectField.sendKeys(description);
+        return new AdminPanelPage(driver);
     }
 
     public void clickSaveProjectButton() {
