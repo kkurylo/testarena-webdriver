@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="392afe12-1f15-4369-b26c-a0bff42dfb41" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/MainTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" afterPath="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" afterPath="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java" afterPath="$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectsPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProjectsPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="534">
@@ -38,11 +39,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectsTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java">
+      <file leaf-file-name="AdminPanelPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="320">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KokpitPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,17 +110,19 @@
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/PropertiesLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/KokpitPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/chromedriver/ProjectsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chromedriver/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="-17" />
     <option name="width" value="1600" />
-    <option name="height" value="900" />
+    <option name="height" value="917" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -561,8 +588,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1600" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="-17" width="1600" height="917" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -574,7 +601,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6240409" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2567742" sideWeight="0.4900285" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2567742" sideWeight="0.4900285" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967742" sideWeight="0.4900285" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -625,7 +652,8 @@
     <MESSAGE value="Wyszukiwanie utworzonego projektu działa" />
     <MESSAGE value="Dodanie gitignore" />
     <MESSAGE value="PageFactory w konstruktorach" />
-    <option name="LAST_COMMIT_MESSAGE" value="PageFactory w konstruktorach" />
+    <MESSAGE value="Dodanie Fluent Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie Fluent Interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -731,10 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="192">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -743,8 +771,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="16">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -761,20 +817,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/AdminPanelPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/chromedriver/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/AdminPanelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="112">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -785,16 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
           <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chromedriver/ProjectsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

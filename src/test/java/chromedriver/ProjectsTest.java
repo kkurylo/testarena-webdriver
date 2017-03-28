@@ -1,16 +1,11 @@
 package chromedriver;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ProjectsTest {
+public class ProjectsTest extends MainTest {
 
-    WebDriver driver = new ChromeDriver();
-    LoginPage loginPage = new LoginPage(driver);
     KokpitPage kokpitPage = new KokpitPage(driver);
     AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
     ProjectsPage projectsPage = new ProjectsPage(driver);
@@ -38,8 +33,4 @@ public class ProjectsTest {
         Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }

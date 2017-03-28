@@ -19,8 +19,6 @@ public class AdminPanelPage {
     @FindBy(id="prefix")
     private WebElement prefixOfProjectField;
 
-//    @FindBy(id="openStatusColor")
-//    private WebElement openStatusColorButton;
 
     @FindBy(id="description")
     private WebElement descriptionOfProjectField;
@@ -52,10 +50,6 @@ public class AdminPanelPage {
         prefixOfProjectField.sendKeys(prefix);
         return new AdminPanelPage(driver);
     }
-
-//    public void setColorOfOpenStatusProject() {
-//        js.executeScript("driver.getElementById('openStatusColor').value='#ffffff'");
-//    }
 
     public AdminPanelPage setProjectDescription(String description) {
         descriptionOfProjectField.sendKeys(description);
