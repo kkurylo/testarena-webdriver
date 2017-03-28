@@ -3,7 +3,6 @@ package chromedriver;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,19 +10,19 @@ import org.testng.annotations.Test;
 public class ProjectsTest {
 
     WebDriver driver = new ChromeDriver();
-    LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-    KokpitPage kokpitPage = PageFactory.initElements(driver, KokpitPage.class);
-    AdminPanelPage adminPanelPage = PageFactory.initElements(driver, AdminPanelPage.class);
-    ProjectsPage projectsPage = PageFactory.initElements(driver, ProjectsPage.class);
+    LoginPage loginPage = new LoginPage(driver);
+    KokpitPage kokpitPage = new KokpitPage(driver);
+    AdminPanelPage adminPanelPage = new AdminPanelPage(driver);
+    ProjectsPage projectsPage = new ProjectsPage(driver);
 
     @BeforeMethod
-    public void getUp() {
+    public void setUp() {
         loginPage.openPage();
         loginPage.logInAsAdmin("administrator@testarena.pl", "sumXQQ72$L");
         kokpitPage.goToAdminPanel();
         adminPanelPage.clickAddProjectButton();
-        adminPanelPage.setProjectName("niechpowstanie");
-        adminPanelPage.setProjectPrefix("26");
+        adminPanelPage.setProjectName("mojnowyprojekt0");
+        adminPanelPage.setProjectPrefix("22a0");
         adminPanelPage.setProjectDescription("niema");
         adminPanelPage.clickSaveProjectButton();
     }
@@ -31,14 +30,14 @@ public class ProjectsTest {
     @Test
     public void shouldFindMyProject() {
         projectsPage.goToProjectsSection();
-        projectsPage.setSearchingProject("niechpowstanie");
+        projectsPage.setSearchingProject("mojnowyprojekt0");
         projectsPage.searchProject();
 
         Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
     }
 
     @AfterMethod
-    public void chillOut() {
+    public void tearDown() {
         driver.quit();
     }
 }

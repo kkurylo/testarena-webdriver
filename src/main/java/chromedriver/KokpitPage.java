@@ -3,6 +3,7 @@ package chromedriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class KokpitPage {
 
@@ -13,6 +14,7 @@ public class KokpitPage {
 
     public KokpitPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     public void goToAdminPanel() {
