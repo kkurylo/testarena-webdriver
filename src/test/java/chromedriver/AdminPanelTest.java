@@ -1,6 +1,5 @@
 package chromedriver;
 
-import org.junit.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -28,6 +27,6 @@ public class AdminPanelTest extends MainTest {
                 .setProjectDescription(properties.getProperty("projectDescription1"))
                 .clickSaveProjectButton();
 
-        Assert.assertTrue(adminPanelPage.findNotificationAddedNewProject());
+        org.testng.Assert.assertTrue(adminPanelPage.findNotificationAddedNewProject());
     }
 }

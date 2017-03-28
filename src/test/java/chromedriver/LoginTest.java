@@ -13,5 +13,7 @@ public class LoginTest extends MainTest {
     @Test
     public void shouldLoginSuccessfully() {
         loginPage.logInAsAdmin(properties.getProperty("adminEmail"), properties.getProperty("adminPassword"));
+
+        org.testng.Assert.assertTrue(loginPage.tellIfICanLogOut());
     }
 }

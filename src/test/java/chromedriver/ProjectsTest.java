@@ -1,6 +1,5 @@
 package chromedriver;
 
-import org.junit.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,6 +31,6 @@ public class ProjectsTest extends MainTest {
                 .setSearchingProject(properties.getProperty("projectName2"))
                 .searchProject();
 
-        Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
+        org.testng.Assert.assertTrue(projectsPage.tellIfProjectIsFounded());
     }
 }
