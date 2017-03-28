@@ -1,6 +1,5 @@
 package chromedriver;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,26 +9,53 @@ public class AdminPanelPage {
 
     WebDriver driver;
 
-    @FindBy(css="a[href='http://demo.testarena.pl/administration/add_project']")
+    @FindBy(css = "a[href='http://demo.testarena.pl/administration/add_project']")
     private WebElement addProjectButton;
 
-    @FindBy(id="name")
+    @FindBy(id = "name")
     private WebElement nameOfProjectField;
 
-    @FindBy(id="prefix")
+    @FindBy(id = "prefix")
     private WebElement prefixOfProjectField;
 
+    @FindBy(xpath = "//*[@id=\"content\"]/article/form/div[4]/span/div/div[2]")
+    private WebElement openStatusColorButton;
 
-    @FindBy(id="description")
+    @FindBy(xpath = "/html/body/div[2]/div[1]/div[2]/button")
+    private WebElement moreColorsForOpenStatusButton;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[1]/div[2]/div[2]")
+    private WebElement clearColorForOpenStatusButton;
+
+    @FindBy(xpath ="/html/body/div[2]/div[2]/div[2]/input")
+    private WebElement colorForOpenStatusField;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div[4]/button")
+    private WebElement saveColorForOpenStatusButton;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/article/form/div[5]/span/div/div[2]")
+    private WebElement inProgressStatusColorButton;
+
+    @FindBy(xpath = "/html/body/div[3]/div[1]/div[2]/button")
+    private WebElement moreColorsForInProgressStatusButton;
+
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[1]/div[2]/div[2]")
+    private WebElement clearColorForInProgressStatusButton;
+
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[2]/input")
+    private WebElement colorForInProgressField;
+
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[4]/button")
+    private WebElement saveColorForInProgressStatusButton;
+
+    @FindBy(id = "description")
     private WebElement descriptionOfProjectField;
 
-    @FindBy(id="save")
+    @FindBy(id = "save")
     private WebElement saveProjectButton;
 
-    @FindBy(id="j_info_box")
+    @FindBy(id = "j_info_box")
     private WebElement notificationBox;
-
-    JavascriptExecutor js = (JavascriptExecutor) driver;
 
     public AdminPanelPage(WebDriver driver) {
         this.driver = driver;
@@ -43,6 +69,24 @@ public class AdminPanelPage {
 
     public AdminPanelPage setProjectName(String name) {
         nameOfProjectField.sendKeys(name);
+        return new AdminPanelPage(driver);
+    }
+
+    public AdminPanelPage setColorForOpenStatus(String colorInHex) {
+        openStatusColorButton.click();
+        moreColorsForOpenStatusButton.click();
+        clearColorForOpenStatusButton.click();
+        colorForOpenStatusField.sendKeys(colorInHex);
+        saveColorForOpenStatusButton.click();
+        return new AdminPanelPage(driver);
+    }
+
+    public AdminPanelPage setColorForInProgressStatus(String colorInHex) {
+        inProgressStatusColorButton.click();
+        moreColorsForInProgressStatusButton.click();
+        clearColorForInProgressStatusButton.click();
+        colorForInProgressField.sendKeys(colorInHex);
+        saveColorForInProgressStatusButton.click();
         return new AdminPanelPage(driver);
     }
 

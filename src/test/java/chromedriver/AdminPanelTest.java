@@ -21,8 +21,10 @@ public class AdminPanelTest extends MainTest {
         kokpitPage.goToAdminPanel();
         adminPanelPage
                 .clickAddProjectButton()
-                .setProjectName("Proj0")
-                .setProjectPrefix("qv0")
+                .setProjectName("Proj19")
+                .setProjectPrefix("qvi19")
+                .setColorForOpenStatus("#f4cccc")
+                .setColorForInProgressStatus("#b6d7a8")
                 .setProjectDescription("T")
                 .clickSaveProjectButton();
 
