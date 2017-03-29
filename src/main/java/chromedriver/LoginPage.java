@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(id="email")
     private WebElement emailField;

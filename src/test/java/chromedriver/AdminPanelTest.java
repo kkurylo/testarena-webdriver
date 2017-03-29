@@ -27,6 +27,6 @@ public class AdminPanelTest extends MainTest {
                 .setProjectDescription(properties.getProperty("projectDescription1"))
                 .clickSaveProjectButton();
 
-        org.testng.Assert.assertTrue(adminPanelPage.findNotificationAddedNewProject());
+        org.testng.Assert.assertTrue(adminPanelPage.tellIfNotificationBoxAddedNewProjectIsFounded());
     }
 }

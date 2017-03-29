@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class KokpitPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(css="a[href='http://demo.testarena.pl/administration']")
     private WebElement rightAdminPanelButton;

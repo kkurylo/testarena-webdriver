@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AdminPanelPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(css = "a[href='http://demo.testarena.pl/administration/add_project']")
     private WebElement addProjectButton;
@@ -18,7 +18,7 @@ public class AdminPanelPage {
     @FindBy(id = "prefix")
     private WebElement prefixOfProjectField;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/article/form/div[4]/span/div/div[2]")
+    @FindBy(css = "#content>article>form>div:nth-child(4)>span>div>div.sp-dd")
     private WebElement openStatusColorButton;
 
     @FindBy(xpath = "/html/body/div[2]/div[1]/div[2]/button")
@@ -33,7 +33,7 @@ public class AdminPanelPage {
     @FindBy(xpath = "/html/body/div[2]/div[2]/div[4]/button")
     private WebElement saveColorForOpenStatusButton;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/article/form/div[5]/span/div/div[2]")
+    @FindBy(css = "#content > article > form > div:nth-child(5) > span > div > div.sp-dd")
     private WebElement inProgressStatusColorButton;
 
     @FindBy(xpath = "/html/body/div[3]/div[1]/div[2]/button")
@@ -104,7 +104,7 @@ public class AdminPanelPage {
         saveProjectButton.click();
     }
 
-    public boolean findNotificationAddedNewProject() {
+    public boolean tellIfNotificationBoxAddedNewProjectIsFounded() {
         return notificationBox.isDisplayed();
     }
 
